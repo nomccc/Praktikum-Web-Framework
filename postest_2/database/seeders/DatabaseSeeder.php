@@ -27,13 +27,7 @@ class DatabaseSeeder extends Seeder
             'password' => 'avivah123',
 
         ]);
-      
-        DB::table('users')->insert([
-            'name' => 'avivah',
-            'email' => 'avivah@gmail.com',
-            'password' => 'avivah123',
 
-        ]);
 
         // \App\Models\User::factory(10)->create();
 

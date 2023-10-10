@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\ProductController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -33,5 +34,9 @@ Route::get('/login', function () {
 Route::get('/dashboard', function () {
     return view('dashboard');
 });
+
+Route::get('/product', [ProductController::class, 'index']);
+
+Route::post('/dashboard', [ProductController::class, 'store']);
 
 Route::post('/login', [AdminController::class, 'authenticate']);

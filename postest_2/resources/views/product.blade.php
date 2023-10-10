@@ -77,5 +77,18 @@
       </div>
     </div>
     </div>
+    <div class="">
+      @foreach ($dataProduct as $item)
+      <div class="grid grid-cols-4 gap-x-8 my-12">
+        <div class="text-center col-span-1">
+          <img src="{{ asset('storage/' . $item->image) }}" alt="">
+          <div id="contentProduct" class="leading-8 " >
+            <p class="font-bold">{{$item -> name}}</p>
+          <p>{{$item -> harga}}</p>
+          </div>
+      </div>
+    </div>
+      @endforeach
+    </div>
 
 @endsection
