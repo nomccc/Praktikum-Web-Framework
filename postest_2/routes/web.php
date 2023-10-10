@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -24,3 +25,13 @@ Route::get('/review', function () {
 Route::get('/product', function () {
     return view('product');
 });
+
+Route::get('/login', function () {
+    return view('login');
+});
+
+Route::get('/dashboard', function () {
+    return view('dashboard');
+});
+
+Route::post('/login', [AdminController::class, 'authenticate']);

@@ -81,5 +81,12 @@
       </div>
     </div>
   </div>
+  <div>
+    <h1 class="font-bold text-center text-3xl my-4">KOMENTAR</h1>
+    <form action="">
+      <label for="username"></label>
+      <input type="text">
+    </form>
+  </div>
 
 @endsection

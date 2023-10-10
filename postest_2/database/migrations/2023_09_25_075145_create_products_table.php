@@ -15,9 +15,6 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->integer('harga');
-            $table->string('rate');
-            $table->string('review_content');
-            $table->timestamp('review_make_at')->nullable();
         });
     }
 
