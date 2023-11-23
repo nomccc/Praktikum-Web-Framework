@@ -2,6 +2,9 @@
 
 @section('content')
     <div>
+      <a href="/logout">
+        <button class="bg-red-400 rounded-md">Logout</button>
+      </a>
       <h1 class="font-bold text-2xl  text-center">Tambah Product</h1>
       <form action="/dashboard" method="post" class="flex flex-col w-1/5 mx-auto py-8" enctype="multipart/form-data">
         @csrf

@@ -15,7 +15,8 @@ class ProductController extends Controller
     public function index()
     {
         //
-        $product = DB::table('products') -> get();
+        // $product = DB::table('products') -> get();
+        $product = Product::all();
         return view ('product', ['dataProduct' => $product] );
     }
 
@@ -46,6 +47,8 @@ class ProductController extends Controller
 
         return redirect('/product');
     }
+
+    
 
     /**
      * Display the specified resource.
